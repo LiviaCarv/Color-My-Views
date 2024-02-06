@@ -11,5 +11,5 @@
     <color name="btn_green">#12C700</color>
     <color name="btn_red">#E54304</color>
     <color name="btn_yellow">#FFC107</color>
-
+    <color name="background">#ED983E</color>
 </resources>

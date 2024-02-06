@@ -10,4 +10,12 @@
     <string name="button_green">Green</string>
     <string name="how_to_play">How to play</string>
     <string name="tap_boxes_and_buttons">Tap the screen and buttons</string>
+    <string name="love_green">I love Green!</string>
+    <string name="love_red">I love Red!</string>
+    <string name="love_yellow">I love Yellow!</string>
+    <string name="nice_background">This background color looks fire!</string>
+    <string name="nice_box">This box is nice!</string>
+    <string name="give_me_some_collors">Give me some collors.</string>
+
+
 </resources>
