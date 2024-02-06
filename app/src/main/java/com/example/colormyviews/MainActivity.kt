@@ -31,13 +31,13 @@ class MainActivity : AppCompatActivity() {
     private fun colorAllViews(view: View, viewsList: List<View> ) {
         when(view.id) {
             R.id.btn_green -> viewsList.forEach{
-                view.setBackgroundColor(ContextCompat.getColor(this,R.color.btn_green))
+                it.setBackgroundColor(ContextCompat.getColor(this,R.color.btn_green))
             }
             R.id.btn_red -> viewsList.forEach {
-                view.setBackgroundColor(ContextCompat.getColor(this,R.color.btn_red))
+                it.setBackgroundColor(ContextCompat.getColor(this,R.color.btn_red))
             }
             R.id.btn_yellow -> viewsList.forEach {
-                view.setBackgroundColor(ContextCompat.getColor(this,R.color.btn_yellow))
+                it.setBackgroundColor(ContextCompat.getColor(this,R.color.btn_yellow))
             }
         }
     }
