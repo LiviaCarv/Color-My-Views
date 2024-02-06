@@ -18,7 +18,9 @@ class MainActivity : AppCompatActivity() {
         val clickableViews: List<View> = listOf(txt_box_one,txt_box_two,txt_box_three,
             txt_box_four,txt_box_five,constraintLayout)
         for (view in clickableViews){
-            view.setOnClickListener{ makeItColored(it)}
+            view.setOnClickListener{
+                makeItColored(it)
+            }
         }
     }
 

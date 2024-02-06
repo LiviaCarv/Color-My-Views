@@ -37,8 +37,8 @@
         style="@style/WhiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="@dimen/margin_wide"
+        android:layout_marginEnd="@dimen/margin_wide"
         android:text="@string/box_three"
         app:layout_constraintBottom_toTopOf="@+id/txt_box_four"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,8 +51,8 @@
         style="@style/WhiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="@dimen/margin_wide"
+        android:layout_marginEnd="@dimen/margin_wide"
         android:text="@string/box_four"
         app:layout_constraintBottom_toTopOf="@+id/txt_box_five"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,12 +64,75 @@
         style="@style/WhiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="@dimen/margin_wide"
+        android:layout_marginEnd="@dimen/margin_wide"
         android:text="@string/box_five"
         app:layout_constraintBottom_toBottomOf="@+id/txt_box_two"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txt_box_two"
         app:layout_constraintTop_toBottomOf="@+id/txt_box_four" />
+
+    <TextView
+        android:id="@+id/txt_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_wide"
+        android:fontFamily="@font/roboto_thin"
+        android:text="@string/how_to_play"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_info"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_wide"
+        android:layout_marginTop="@dimen/margin_wide"
+        android:layout_marginEnd="@dimen/margin_wide"
+        android:layout_marginBottom="@dimen/margin_wide"
+        android:text="@string/tap_boxes_and_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_label"
+        app:layout_constraintTop_toBottomOf="@+id/txt_box_two"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <Button
+        android:id="@+id/btn_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_wide"
+        android:text="@string/button_red"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_yellow"
+        app:layout_constraintEnd_toStartOf="@+id/btn_yellow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_wide"
+        android:layout_marginEnd="@dimen/margin_wide"
+        android:layout_marginBottom="@dimen/margin_wide"
+        android:text="@string/button_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_green"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintStart_toEndOf="@+id/btn_red"
+        app:layout_constraintTop_toBottomOf="@+id/txt_info"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_wide"
+        android:text="@string/button_green"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_yellow"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_yellow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
